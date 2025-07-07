@@ -10,15 +10,22 @@
 </head>
 <body>
 
-  <nav>
-    <div class="logo"><a href="#main">M Rizky Ramadhan</a></div>
-    <ul>
+ <nav class="navbar">
+  <div class="navbar-container">
+    <a href="#main" class="navbar-logo">M Rizky</a>
+    <div class="navbar-toggle" onclick="toggleMenu()">
+      <i class='bx bx-menu'></i>
+    </div>
+    <ul class="navbar-menu" id="navbarMenu">
       <li><a href="#main">Home</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#about">About Me</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contactSection">Contact</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
+
 
   <div class="main" id="main">
     <div class="left">
@@ -104,6 +111,17 @@
   </div>
 
   <footer>
+    <div id="contactSection" class="contact">
+  <h3>Contact Me</h3>
+  <p>Feel free to reach out to me via email or social media below.</p>
+  <ul class="contact-links">
+    <li><a href="mailto:riskyra8990@gmail.com"><i class='bx bxl-gmail'></i> riskyra8990@gmail.com</a></li>
+    <li><a href="https://www.instagram.com/mrizkyr.11/"><i class='bx bxl-instagram'></i> Instagram</a></li>
+    <li><a href="https://www.tiktok.com/@soretiree"><i class='bx bxl-tiktok'></i> TikTok</a></li>
+    <li><a href="https://github.com"><i class='bx bxl-github'></i> GitHub</a></li>
+  </ul>
+</div>
+
     <div class="logo"><h3>Mrizky</h3></div>
     <ul>
       <li><a href="#">Home</a></li>
