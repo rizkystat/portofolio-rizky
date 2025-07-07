@@ -537,5 +537,48 @@ footer .bottom .links a{
     .feedback .customers .item{
         width: 100%;
     }
+    /* Tambahan fix responsive portfolio images */
+.portfolio .portfo-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio .portfo-items .item {
+    flex: 1 1 300px;
+    max-width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.portfolio .portfo-items .item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.portfolio .portfo-items .item .info {
+    padding: 16px;
+    text-align: center;
+}
+
+/* Untuk layar kecil */
+@media screen and (max-width: 576px) {
+    .portfolio .portfo-items .item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .portfolio .portfo-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 }
