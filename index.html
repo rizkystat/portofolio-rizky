@@ -1,141 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Personal Portfolio</title>
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="navbar-container">
-      <a href="#" class="navbar-logo">M Rizky Ramadhan</a>
-      <div class="navbar-toggle" onclick="toggleMenu()">
-        <i class='bx bx-menu'></i>
-      </div>
-      <ul class="navbar-menu" id="navbarMenu">
-        <li><a href="#main">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <nav>
+    <div class="logo">
+      <a href="#main">M Rizky Ramadhan</a>
     </div>
+    <ul>
+      <li><a href="#main">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+    </ul>
+    <button onclick="document.getElementById('contactSection').scrollIntoView()">Contact Me</button>
+    <button id="menuButton" onclick="openMenu()">
+      <i class='bx bx-menu'></i>
+    </button>
   </nav>
 
-  <section class="main" id="main">
+  <div class="main" id="main">
     <div class="left">
       <h5>Hey, I am Rizky</h5>
       <h3>I am a Rookie to the IT industry, specializing in <span>web development</span>.</h3>
       <p>
-        As a new convert to the IT world, I bring passion and skills in web development. I'm committed to contributing creatively and continuously learning.
+        As a new convert to the IT world, I bring passion and skills in web development.
+        I am committed to making maximum contributions with my creativity and perseverance,
+        aiming to continue to grow and innovate within the IT working environment.
       </p>
-      <button onclick="document.getElementById('contact').scrollIntoView()">Get In Touch</button>
+      <button onclick="document.getElementById('skills').scrollIntoView()">Get In Touch</button>
     </div>
     <div class="right">
-      <img src="assets/header.png" alt="Header Image" />
+      <img src="assets/header.png" alt="Header Image">
     </div>
-  </section>
+  </div>
 
-  <section class="skills" id="skills">
-    <h3>My Skills</h3>
+  <div class="skills" id="skills">
+    <h5>My Skills</h5>
     <div class="skill-items">
-      <div class="item"><div class="icon"><i class='fab fa-html5'></i></div><h4>HTML</h4></div>
-      <div class="item"><div class="icon"><i class='fab fa-css3-alt'></i></div><h4>CSS</h4></div>
-      <div class="item"><div class="icon"><i class='fab fa-bootstrap'></i></div><h4>Bootstrap</h4></div>
-      <div class="item"><div class="icon"><i class='fab fa-js'></i></div><h4>JavaScript</h4></div>
-      <div class="item"><div class="icon"><i class='fab fa-php'></i></div><h4>PHP</h4></div>
-      <div class="item"><div class="icon"><i class='fas fa-database'></i></div><h4>MySQL</h4></div>
-      <div class="item"><div class="icon"><i class='fab fa-laravel'></i></div><h4>Laravel</h4></div>
+      <div class="item"><div class="icon"><i class='fab fa-html5'></i></div><h4>HTML</h4><p>Able to use HTML reasonably well, skilled in building web page structures with consistency and rigour.</p></div>
+      <div class="item"><div class="icon"><i class="fab fa-css3-alt"></i></div><h4>CSS</h4><p>Able to use CSS, constantly evolving in usage and commitment to the improvement of design and styling skills.</p></div>
+      <div class="item"><div class="icon"><i class="fab fa-bootstrap"></i></div><h4>Bootstrap</h4><p>Able to use Bootstrap, committed to improving skills in the application & Bootstrap.</p></div>
+      <div class="item"><div class="icon"><i class='fab fa-php'></i></div><h4>PHP</h4><p>Able to use PHP. Committed to improve of skills and abilities.</p></div>
+      <div class="item"><div class="icon"><i class='fab fa-js'></i></div><h4>JavaScript</h4><p>Able to use JavaScript and continue learning, with commitment to further skill development.</p></div>
+      <div class="item"><div class="icon"><i class='fas fa-database'></i></div><h4>MySQL</h4><p>Able to use MySQL, still learning for further development, commitment to improve skills.</p></div>
+      <div class="item"><div class="icon"><i class='fab fa-laravel'></i></div><h4>Laravel</h4><p>Able to use Laravel, constantly evolving in development, commitment to improve skills and further understanding.</p></div>
     </div>
-  </section>
+  </div>
 
-  <section class="about" id="about">
+  <div class="about" id="about">
     <div class="left">
-      <img src="assets/about.jpeg" alt="About Me" />
+      <img src="assets/about.jpeg" alt="About Me">
     </div>
     <div class="right">
+      <h5>About</h5>
       <h3>About Me</h3>
-      <p>I am passionate about IT and motivated to grow. My focus is on continuous learning and contributing to projects that matter.</p>
+      <p>As an individual who has recently transitioned into the IT world, I bring with me a passion and desire to understand and explore all aspects of information technology.</p>
+      <p>I have a clear goal of continuously improving my IT skills and knowledge in order to contribute significantly to projects involving technology.</p>
+      <p>I believe that the IT world is a dynamic and innovative stage. My desire to continuously learn and adapt to the latest developments in technology motivates me to achieve success in my IT career.</p>
+      <p>I am committed to becoming a professional who can make a positive and innovative impact in the world of information technology.</p>
     </div>
-  </section>
+  </div>
 
-  <section class="portfolio" id="portfolio">
-    <h3>My Portfolio</h3>
+  <div class="portfolio" id="portfolio">
+    <div class="header">
+      <div class="info">
+        <h5>Recent Projects</h5>
+        <h3>My Portfolio</h3>
+      </div>
+      <a href="https://www.tiktok.com/@soretiree?_t=8qWjFiMqYOu&_r=1" target="_blank">
+        <button><i class='fab fa-tiktok'></i> Visit My TikTok</button>
+      </a>
+    </div>
     <div class="portfo-items">
       <div class="item">
-        <img src="assets/Design Aplikasi.jpeg" alt="Design Coffee Shop" />
+        <img src="assets/Design Aplikasi.jpeg" alt="Design Coffeeshop">
         <div class="info">
-          <h4>Design Coffeeshop Mobile</h4>
-          <p>Figma prototype design.</p>
-          <a href="https://www.figma.com/proto/IFwl7QFfiS6DynuGIXYn8S/Kopi-Seeyou" target="_blank">View in Figma <i class='bx bx-link-external'></i></a>
+          <h4>Design Coffeshop Mobile</h4>
+          <p>Aplikasi design coffeshop in Figma</p>
+          <a href="https://www.figma.com/proto/IFwl7QFfiS6DynuGIXYn8S/Kopi-Seeyou?node-id=1-6" target="_blank">View in Figma <i class='bx bx-link-external'></i></a>
         </div>
       </div>
       <div class="item">
-        <img src="assets/new.jpeg" alt="E-Commerce" />
+        <img src="assets/new.jpeg" alt="Mini E-Commerce">
         <div class="info">
-          <h4>Mini E-Commerce</h4>
-          <p>Landing page using GitHub Pages.</p>
+          <h4>Mini E-Commerce Landing Page</h4>
+          <p>Create a marketplace landing page</p>
           <a href="https://rizkystat.github.io/mini-ecommerce/" target="_blank">View on GitHub <i class='bx bx-link-external'></i></a>
         </div>
       </div>
       <div class="item">
-        <img src="assets/healtyht.png" alt="Health Guide" />
+        <img src="assets/healtyht.png" alt="Health Guide">
         <div class="info">
-          <h4>Health Web App</h4>
-          <p>Information website for health guidance.</p>
+          <h4>Web App</h4>
+          <p>Create a Health Guide and Information Website</p>
           <a href="https://macro-challange-smart-healt-5zhx.vercel.app/" target="_blank">View on GitHub <i class='bx bx-link-external'></i></a>
         </div>
       </div>
       <div class="item">
-        <img src="assets/space.png" alt="Web Game Space" />
+        <img src="assets/space.png" alt="Web Game Space">
         <div class="info">
-          <h4>Web Game: Space</h4>
-          <p>Simple JavaScript browser game.</p>
+          <h4>Web Game Space</h4>
+          <p>Simple JavaScript Space Game</p>
           <a href="#" target="_blank">Play Game <i class='bx bx-link-external'></i></a>
         </div>
       </div>
       <div class="item">
-        <img src="assets/battle.png" alt="Web Game Battle" />
+        <img src="assets/battle.png" alt="Web Game Battle">
         <div class="info">
-          <h4>Web Game: Battle</h4>
-          <p>JavaScript-based battle game UI.</p>
+          <h4>Web Game Battle</h4>
+          <p>Simple JavaScript Battle Game</p>
           <a href="#" target="_blank">Play Game <i class='bx bx-link-external'></i></a>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <h3>Contact Me</h3>
-    <ul class="contact-links">
-      <li><a href="mailto:riskyra8990@gmail.com"><i class='bx bxl-gmail'></i> riskyra8990@gmail.com</a></li>
-      <li><a href="https://www.instagram.com/mrizkyr.11/"><i class='bx bxl-instagram'></i> Instagram</a></li>
-      <li><a href="https://www.tiktok.com/@soretiree"><i class='bx bxl-tiktok'></i> TikTok</a></li>
-      <li><a href="https://github.com"><i class='bx bxl-github'></i> GitHub</a></li>
-    </ul>
-  </section>
+  </div>
 
   <footer>
-    <div class="logo">
-      <h3>Mrizky</h3>
+    <div class="top">
+      <div class="logo">
+        <h3>Mrizky</h3>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@soretiree"><i class='bx bxl-tiktok'></i></a>
+        <a href="https://www.instagram.com/mrizkyr.11"><i class='bx bxl-instagram'></i></a>
+        <a href="https://github.com"><i class='bx bxl-github'></i></a>
+        <a href="mailto:riskyra8990@gmail.com" id="contactSection"><i class='bx bxl-gmail'></i></a>
+      </div>
     </div>
-    <ul>
-      <li><a href="#main">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <p>Made with ❤️</p>
+    <div class="separator"></div>
+    <div class="bottom">
+      <p>Made with ❤️</p>
+      <div class="links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookies Setting</a>
+      </div>
+    </div>
   </footer>
 
   <script>
-    function toggleMenu() {
-      const menu = document.getElementById('navbarMenu');
-      menu.classList.toggle('show');
+    function openMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('open');
     }
   </script>
 </body>
+
 </html>
