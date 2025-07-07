@@ -579,6 +579,41 @@ footer .bottom .links a{
         align-items: center;
     }
 }
+/* Grid yang meratakan tinggi semua kartu */
+.portfolio .portfo-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.portfolio .portfo-items .item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  flex: 1 1 300px;
+  max-width: 320px;
+}
+
+.portfolio .portfo-items .item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.portfolio .portfo-items .item .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+}
 
 
 }
